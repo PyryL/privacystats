@@ -1,7 +1,7 @@
 # Privacystats
 
 ![Python 3.9](https://img.shields.io/badge/python-3.9-informational)
-![GitHub](https://img.shields.io/github/license/PyryL/privacystats)
+![GitHub](https://img.shields.io/github/license/PyryL/privacystats?v=2)
 
 Creates a summary of the privacy data found on [privacytests.org](https://privacytests.org). The site is created by Arthur Edelstein and I'm not related to it at all. The source code of privacytests can be found [here](https://github.com/arthuredelstein/privacytests.org) under MIT license.
 
