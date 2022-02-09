@@ -17,7 +17,8 @@ rankings = {}
 
 for browser in browsers:
     browserName = browser["browser"]
-    rankings[browserName] = 0
+    if browserName not in rankings.keys():
+        rankings[browserName] = 0
     if browser["testResults"] == None:
         continue
     for topicName in browser["testResults"].keys():
@@ -30,6 +31,8 @@ for browser in browsers:
                     rankings[browserName] += 1
 
 nameLength = max([len(a) for a in rankings.keys()]) + 2
+bestPoints = max(list(rankings.values()))
 rankings = sorted(rankings.items(), key=lambda x: x[1], reverse=True)
 for name, points in rankings:
-    print(f"{name:{nameLength}} {'*'*points}")
+    starCount = round(points * 100 / bestPoints)
+    print(f"{name:{nameLength}} {'*'*starCount} {' '*(100-starCount)} {points:3}")
