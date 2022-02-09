@@ -6,18 +6,18 @@
 Creates a summary of the privacy data found on [privacytests.org](https://privacytests.org). The site is created by Arthur Edelstein and I'm not related to it at all. The source code of privacytests can be found [here](https://github.com/arthuredelstein/privacytests.org) under MIT license.
 
 ## Example
-Here is an example of how this script works. Each asterisk stands for one passed privacy test.
+Here is an example of how this script works. More asterisks means better privacy.
 
 ```
-brave       *********************************************************************
-librewolf   **********************************************************
-tor         **************************************
-safari      **************************
-firefox     ******************
-ungoogled   ****************
-chrome      *************
-edge        ************
-opera       ************
-vivaldi     ***********
+brave       ****************************************************************************************************  346
+librewolf   ************************************************************************************                  290
+tor         ********************************************************                                              195
+safari      **************************************                                                                130
+ungoogled   *****************************                                                                         100
+firefox     **************************                                                                             90
+edge        ****************                                                                                       55
+chrome      ************                                                                                           43
+opera       ************                                                                                           41
+vivaldi     **********                                                                                             35
 ```
-Created on Jan 22nd, 2022 using privacytests' issue no. 14.
+Created on Feb 9th, 2022 using privacytests' issue no. 15 on desktop browsers.
